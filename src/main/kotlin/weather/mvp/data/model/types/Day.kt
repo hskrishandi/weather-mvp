@@ -8,4 +8,9 @@ enum class Day(val day: String){
     FRI("Friday"),
     SAT("Saturday"),
     SUN("Sunday");
+
+    companion object {
+        private val map = Day.values().associateBy(Day::day)
+        fun fromName(name: String) = map[name]
+    }
 }

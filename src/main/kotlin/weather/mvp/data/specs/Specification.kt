@@ -1,3 +1,3 @@
-package main.kotlin.weather.mvp.data.specs
+package weather.mvp.data.specs
 
 interface Specification {}

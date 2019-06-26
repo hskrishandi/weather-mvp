@@ -1,6 +1,6 @@
-package main.kotlin.weather.mvp.data
+package weather.mvp.data
 
-import main.kotlin.weather.mvp.data.specs.Specification
+import weather.mvp.data.specs.Specification
 
 interface Repository<T> {
     fun add(item: T)

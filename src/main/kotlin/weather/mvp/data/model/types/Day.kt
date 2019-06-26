@@ -1,4 +1,4 @@
-package main.kotlin.weather.mvp.data.model.types
+package weather.mvp.data.model.types
 
 enum class Day(val day: String){
     MON("Monday"),

@@ -1,7 +1,7 @@
-package main.kotlin.weather.mvp.data.model
+package weather.mvp.data.model
 
-import main.kotlin.weather.mvp.data.model.types.Day
-import main.kotlin.weather.mvp.data.model.types.Weather
+import weather.mvp.data.model.types.Day
+import weather.mvp.data.model.types.Weather
 
 data class WeatherInfo(
     val weather: Weather,

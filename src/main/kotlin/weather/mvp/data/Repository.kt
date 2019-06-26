@@ -7,5 +7,5 @@ interface Repository<T> {
 
     fun add(iterable: Iterable<T>)
 
-    fun query(specification: Specification, vararg keywords: String): List<T>
+    fun query(specification: Specification? = null, vararg keywords: String): List<T>
 }

@@ -1,5 +1,6 @@
 package weather.mvp.ui.main
 
+import weather.mvp.data.Repository
 import weather.mvp.data.WeatherInfoListRepository
 import weather.mvp.data.model.WeatherInfo
 import weather.mvp.data.specs.filter.weatherInfo.AndFilter
@@ -7,9 +8,10 @@ import weather.mvp.data.specs.filter.weatherInfo.CityFilter
 import weather.mvp.data.specs.filter.weatherInfo.StartDayFilter
 import weather.mvp.ui.Presenter
 
-class WeatherInfoPresenter(private val view: View) : Presenter {
-
-    private val weatherInfoRepo = WeatherInfoListRepository()
+class WeatherInfoPresenter(
+    private val view: View,
+    private val weatherInfoRepo: Repository<WeatherInfo> = WeatherInfoListRepository()
+) : Presenter {
 
     override fun onCreate() {
         weatherInfoRepo.add(weatherList)
